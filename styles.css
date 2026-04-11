@@ -395,48 +395,30 @@ body {
 .skill-progress {
     height: 100%;
     border-radius: 10px;
+    transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1);
     width: 0;
     position: relative;
     overflow: hidden;
-    animation: fillBar 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0.5s forwards;
 }
 
 .skill-item:nth-child(1) .skill-progress {
-    background: var(--skill-1);
-    animation-name: fillBar90;
+    background: var(--skill-1);  
 }
 
 .skill-item:nth-child(2) .skill-progress {
-    background: var(--skill-2);
-    animation-name: fillBar90;
+    background: var(--skill-2);  
 }
 
 .skill-item:nth-child(3) .skill-progress {
-    background: var(--skill-3);
-    animation-name: fillBar80;
+    background: var(--skill-3);  
 }
 
 .skill-item:nth-child(4) .skill-progress {
-    background: var(--skill-4);
-    animation-name: fillBar65;
+    background: var(--skill-4);  
 }
 
 .skill-item:nth-child(5) .skill-progress {
-    background: var(--skill-5);
-    animation-name: fillBar80;
-}
-
-@keyframes fillBar90 {
-    from { width: 0; }
-    to   { width: 90%; }
-}
-@keyframes fillBar80 {
-    from { width: 0; }
-    to   { width: 80%; }
-}
-@keyframes fillBar65 {
-    from { width: 0; }
-    to   { width: 65%; }
+    background: var(--skill-5);  
 }
 
 .skill-progress::before {
@@ -561,7 +543,7 @@ body {
     background: var(--white);
 }
 
-.ad-container {
+.featured-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -569,7 +551,7 @@ body {
     width: 100%;
 }
 
-.ad-card {
+.featured-card {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 2rem;
@@ -580,12 +562,12 @@ body {
     min-height: 250px;
 }
 
-.ad-card:hover {
+.featured-card:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.15);
 }
 
-.ad-badge {
+.featured-label {
     display: inline-block;
     background: var(--accent-color);
     padding: 0.5rem 1rem;
@@ -595,14 +577,14 @@ body {
     margin-bottom: 1rem;
 }
 
-.ad-card h3 {
+.featured-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: white;
     font-weight: 700;
 }
 
-.ad-card p {
+.featured-card p {
     margin-bottom: 1.5rem;
     opacity: 1;
     color: white;
@@ -1329,7 +1311,7 @@ body {
 
     .info-grid,
     .hobbies-grid,
-    .ad-container {
+    .featured-container {
         grid-template-columns: 1fr;
     }
 
@@ -1357,3 +1339,17 @@ body {
         padding: 50px 15px;
     }
 }
+/* ===== SKILL BAR CSS ANIMATION OVERRIDE ===== */
+.skill-progress {
+    animation: none !important;
+    transition: none !important;
+}
+.skill-item:nth-child(1) .skill-progress { animation: fillBar90 1.5s cubic-bezier(0.65,0,0.35,1) 0.5s forwards !important; }
+.skill-item:nth-child(2) .skill-progress { animation: fillBar90 1.5s cubic-bezier(0.65,0,0.35,1) 0.6s forwards !important; }
+.skill-item:nth-child(3) .skill-progress { animation: fillBar80 1.5s cubic-bezier(0.65,0,0.35,1) 0.7s forwards !important; }
+.skill-item:nth-child(4) .skill-progress { animation: fillBar65 1.5s cubic-bezier(0.65,0,0.35,1) 0.8s forwards !important; }
+.skill-item:nth-child(5) .skill-progress { animation: fillBar80 1.5s cubic-bezier(0.65,0,0.35,1) 0.9s forwards !important; }
+
+@keyframes fillBar90 { from { width: 0; } to { width: 90%; } }
+@keyframes fillBar80 { from { width: 0; } to { width: 80%; } }
+@keyframes fillBar65 { from { width: 0; } to { width: 65%; } }

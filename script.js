@@ -63,8 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const progress = bar.getAttribute('data-progress');
             bar.style.width = progress + '%';
         });
-        skillsAnimated = true;
     }
+    
+    setTimeout(() => {
+        const skillsSection = document.querySelector('.all-about');
+        if (skillsSection && isInViewport(skillsSection)) {
+            animateSkills();
+            skillsAnimated = true;
+        }
+    }, 500);
     
     const skillsSection = document.querySelector('.all-about');
     
@@ -72,18 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting && !skillsAnimated) {
                 animateSkills();
+                skillsAnimated = true;
             }
         });
-    }, { threshold: 0 });
+    }, { threshold: 0.3 });
     
     if (skillsSection) {
         skillsObserver.observe(skillsSection);
     }
-
-    // Fallback: animate after 800ms in case observer doesn't fire
-    setTimeout(() => {
-        if (!skillsAnimated) animateSkills();
-    }, 800);
 
     const revealElements = document.querySelectorAll('.info-card, .hobby-card, .goal-item, .timeline-item');
     
