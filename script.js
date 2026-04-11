@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0 });
     
     revealElements.forEach(element => {
         element.style.opacity = '0';
@@ -411,11 +411,7 @@ console.log('%cBuilt with HTML, CSS, and JavaScript', 'font-size: 14px; color: #
 
 
     window.addEventListener('load', function() {
-        document.body.style.opacity = '0';
-        setTimeout(() => {
-            document.body.style.transition = 'opacity 0.5s ease';
-            document.body.style.opacity = '1';
-        }, 100);
+        document.body.style.opacity = '1';
     });
 
 
