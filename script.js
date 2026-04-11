@@ -63,15 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const progress = bar.getAttribute('data-progress');
             bar.style.width = progress + '%';
         });
+        skillsAnimated = true;
     }
-    
-    setTimeout(() => {
-        const skillsSection = document.querySelector('.all-about');
-        if (skillsSection && isInViewport(skillsSection)) {
-            animateSkills();
-            skillsAnimated = true;
-        }
-    }, 500);
     
     const skillsSection = document.querySelector('.all-about');
     
@@ -79,14 +72,18 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting && !skillsAnimated) {
                 animateSkills();
-                skillsAnimated = true;
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0 });
     
     if (skillsSection) {
         skillsObserver.observe(skillsSection);
     }
+
+    // Fallback: animate after 800ms in case observer doesn't fire
+    setTimeout(() => {
+        if (!skillsAnimated) animateSkills();
+    }, 800);
 
     const revealElements = document.querySelectorAll('.info-card, .hobby-card, .goal-item, .timeline-item');
     
@@ -97,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, { threshold: 0 });
+    }, { threshold: 0.1 });
     
     revealElements.forEach(element => {
         element.style.opacity = '0';
@@ -411,7 +408,11 @@ console.log('%cBuilt with HTML, CSS, and JavaScript', 'font-size: 14px; color: #
 
 
     window.addEventListener('load', function() {
-        document.body.style.opacity = '1';
+        document.body.style.opacity = '0';
+        setTimeout(() => {
+            document.body.style.transition = 'opacity 0.5s ease';
+            document.body.style.opacity = '1';
+        }, 100);
     });
 
 
