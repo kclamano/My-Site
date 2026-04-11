@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Personal Site</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#info" class="nav-link">Info</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="images/icon.jpg" alt="Profile Picture">
+            </div>
+            <h1 class="hero-title">Hello, I'm <span class="highlight">Kim!</span></h1>
+            <p class="hero-subtitle">Student | Web Developer | Aspiring Software Engineer</p>
+            <div class="social-links">
+                <a href="mailto:klamano23@gmail.com" class="social-icon" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kim-celine-lamano-35b906390/" target="_blank" class="social-icon" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/kclamano" target="_blank" class="social-icon" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="tel:+639771743302" class="social-icon" title="Phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow-down">↓</div>
+        </div>
+    </section>
+
+    <section id="about" class="section autobiography">
+        <div class="container">
+            <h2 class="section-title">My Story</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Early Life</h3>
+                        <p>Born and raised in Muntinlupa City, I grew deeply interested in learning and technology at a young age.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Education Journey</h3>
+                        <p>I am currently pursuing a Computer Science degree at Lyceum of Alabang, gaining valuable skills in web development and software engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Present Day</h3>
+                        <p>Today, I focus on building practical projects, refining my web development skills, and continuously learning new technologies to grow as a developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="section personal-info">
+        <div class="container">
+            <h2 class="section-title">Personal Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Kim Celine F. Lamano</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                    </div>
+                    <h3>Date of Birth</h3>
+                    <p>November 23, 2006</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:klamano23@gmail.com">klamano23@gmail.com</a></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+63 977 1743 302</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Muntinlupa City, PH</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Lyceum of Alabang</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section all-about">
+        <div class="container">
+            <h2 class="section-title">All About Me</h2>
+
+            <!-- Skills -->
+            <div class="subsection">
+                <h3>Skills & Abilities</h3>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-name" data-percentage="90%">HTML & CSS</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name" data-percentage="90%">C++</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name" data-percentage="80%">Python</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name" data-percentage="65%">Git & GitHub</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name" data-percentage="80%">JavaScript</div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies & Interests -->
+            <div class="subsection">
+                <h3>Hobbies & Interests</h3>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h4>Coding</h4>
+                        <p>Building websites and learning new technologies</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+                        </div>
+                        <h4>Watching</h4>
+                        <p>Exploring different genres and expanding knowledge</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="8" x="5" y="2" rx="2"/><path d="M2 8h2"/><path d="M20 8h2"/><path d="M10 10v4"/><path d="M14 10v4"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 18h.01"/><path d="M18 18h.01"/></svg>
+                        </div>
+                        <h4>Gaming</h4>
+                        <p>Strategy games and problem-solving challenges</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        </div>
+                        <h4>Music</h4>
+                        <p>Listening to various music genres for inspiration</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goals & Aspirations -->
+            <div class="subsection">
+                <h3>Goals & Aspirations</h3>
+                <div class="goals-container">
+                    <div class="goal-item">
+                        <span class="goal-number">01</span>
+                        <div class="goal-content">
+                            <h4>Academic Excellence</h4>
+                            <p>Complete my degree and pursue further studies through a master's program or an additional degree.</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-number">02</span>
+                        <div class="goal-content">
+                            <h4>Professional Growth</h4>
+                            <p>Strengthen my skills in software engineering through hands-on projects, internships, and practical experience.</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-number">03</span>
+                        <div class="goal-content">
+                            <h4>Continuous Learning</h4>
+                            <p>Actively learn and adapt to new technologies to remain competitive in the software development field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title">My Gallery</h2>
+            <p class="gallery-subtitle">A glimpse into my world — moments, memories, and milestones.</p>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="life">Life</button>
+                <button class="filter-btn" data-filter="school">School</button>
+                <button class="filter-btn" data-filter="projects">Projects</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="life">
+                    <img src="images/cinema.jpg" alt="Cinema with friends">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Life</span>
+                            <h4>Cinema with Friends</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life">
+                    <img src="images/withnieces.png" alt="With my nieces">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Life</span>
+                            <h4>With My Nieces</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life">
+                    <img src="images/rbwfriends1.png" alt="Roblox with friends">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Life</span>
+                            <h4>Roblox with Friends</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life">
+                    <img src="images/rbwithfriends2.png" alt="Roblox with friends 2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Life</span>
+                            <h4>More Roblox Fun</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <img src="images/gaslawcalc.png" alt="Gas Laws Calculator">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Projects</span>
+                            <h4>Gas Laws Calculator</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <img src="images/intperiodic.png" alt="Interactive Periodic Table">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Projects</span>
+                            <h4>Interactive Periodic Table</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <img src="images/molecalc.png" alt="Mole Calculator">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Projects</span>
+                            <h4>Mole Calculator</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life">
+                    <img src="images/life1.jpg" alt="Life Moments 1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Life</span>
+                            <h4>w friends</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life">
+                    <img src="images/life2.jpg" alt="Life Moments 2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">Life</span>
+                            <h4>w friends 2</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="school">
+                    <img src="images/school1.jpg" alt="School Days 1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">School</span>
+                            <h4>School life</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="school">
+                    <img src="images/school2.jpg" alt="School Days 2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-tag">School</span>
+                            <h4>School life</h4>
+                        </div>
+                        <div class="gallery-zoom">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section activities-section">
+        <div class="container">
+            <h2 class="section-title">Course Activities</h2>
+            <p class="activities-subtitle">A showcase of my work from Prelims to Finals — 33 activities across all terms.</p>
+            <div class="gallery-filters">
+                <button class="act-filter-btn active" data-term="all">All Terms</button>
+                <button class="act-filter-btn" data-term="prelims">Prelims</button>
+                <button class="act-filter-btn" data-term="midterm">Midterm</button>
+                <button class="act-filter-btn" data-term="prefinal">Pre-Final</button>
+                <button class="act-filter-btn" data-term="finals">Finals</button>
+            </div>
+
+            <!-- PRELIMS -->
+            <div class="term-group" id="term-prelims">
+                <div class="term-header">
+                    <span class="term-badge prelims-badge">Prelims</span>
+                    <h3 class="term-title">Preliminary Period</h3>
+                    <span class="term-count">10 Activities</span>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card slideshow-card" data-term="prelims" data-slideshow="prelim-act1" data-count="5" data-ext="jpg">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act1-1.jpg" alt="Prelim Activity 1" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="slideshow-badge">5 photos</div>
+                        </div>
+
+                        <div class="activity-info">
+                            <span class="act-badge prelims-badge">Prelims</span>
+                            <h4>Activity 1</h4>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act2.png" alt="Prelim Activity 2" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 2</h4></div>
+
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act3.png" alt="Prelim Activity 3" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 3</h4></div>
+
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act4.png" alt="Prelim Activity 4" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 4</h4></div>
+
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act5.png" alt="Prelim Activity 5" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 5</h4></div>
+
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act6.png" alt="Prelim Activity 6" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 6</h4></div>
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act7.png" alt="Prelim Activity 7" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 7</h4></div>
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act8.png" alt="Prelim Activity 8" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 8</h4></div>
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act9.png" alt="Prelim Activity 9" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 9</h4></div>
+                    </div>
+                    <div class="activity-card" data-term="prelims">
+                        <div class="activity-img-wrap">
+                            <img src="images/prelim-act10.png" alt="Prelim Activity 10" onerror="this.parentElement.classList.add('img-missing')">
+                            <div class="act-placeholder-inner"><span>+</span></div>
+                        </div>
+                        <div class="activity-info"><span class="act-badge prelims-badge">Prelims</span><h4>Activity 10</h4></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIDTERM -->
+            <div class="term-group" id="term-midterm">
+                <div class="term-header">
+                    <span class="term-badge midterm-badge">Midterm</span>
+                    <h3 class="term-title">Midterm Period</h3>
+                    <span class="term-count">10 Activities</span>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act1.png" alt="Midterm Activity 1" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 1</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act2.png" alt="Midterm Activity 2" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 2</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act3.png" alt="Midterm Activity 3" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 3</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act4.png" alt="Midterm Activity 4" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 4</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act5.png" alt="Midterm Activity 5" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 5</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act6.png" alt="Midterm Activity 6" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 6</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act7.png" alt="Midterm Activity 7" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 7</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act8.png" alt="Midterm Activity 8" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 8</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act9.png" alt="Midterm Activity 9" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 9</h4></div></div>
+                    <div class="activity-card" data-term="midterm"><div class="activity-img-wrap"><img src="images/midterm-act10.png" alt="Midterm Activity 10" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge midterm-badge">Midterm</span><h4>Activity 10</h4></div></div>
+                </div>
+            </div>
+
+            <!-- PRE-FINAL -->
+            <div class="term-group" id="term-prefinal">
+                <div class="term-header">
+                    <span class="term-badge prefinal-badge">Pre-Final</span>
+                    <h3 class="term-title">Pre-Final Period</h3>
+                    <span class="term-count">10 Activities</span>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act1.png" alt="Pre-Final Activity 1" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 1</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act2.png" alt="Pre-Final Activity 2" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 2</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act3.png" alt="Pre-Final Activity 3" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 3</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act4.gif" alt="Pre-Final Activity 4" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 4</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act5.png" alt="Pre-Final Activity 5" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 5</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act6.png" alt="Pre-Final Activity 6" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 6</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act7.png" alt="Pre-Final Activity 7" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 7</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act8.png" alt="Pre-Final Activity 8" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 8</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act9.png" alt="Pre-Final Activity 9" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 9</h4></div></div>
+                    <div class="activity-card" data-term="prefinal"><div class="activity-img-wrap"><img src="images/prefinal-act10.png" alt="Pre-Final Activity 10" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge prefinal-badge">Pre-Final</span><h4>Activity 10</h4></div></div>
+                </div>
+            </div>
+
+            <!-- FINALS -->
+            <div class="term-group" id="term-finals">
+                <div class="term-header">
+                    <span class="term-badge finals-badge">Finals</span>
+                    <h3 class="term-title">Final Period</h3>
+                    <span class="term-count">3 Activities</span>
+                </div>
+                <div class="activities-grid finals-grid">
+                    <div class="activity-card" data-term="finals"><div class="activity-img-wrap"><img src="images/finals-act1.png" alt="Finals Activity 1" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge finals-badge">Finals</span><h4>Activity 1</h4></div></div>
+                    <div class="activity-card" data-term="finals"><div class="activity-img-wrap"><img src="images/finals-act2.png" alt="Finals Activity 2" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge finals-badge">Finals</span><h4>Activity 2</h4></div></div>
+                    <div class="activity-card" data-term="finals"><div class="activity-img-wrap"><img src="images/finals-act3.png" alt="Finals Activity 3" onerror="this.parentElement.classList.add('img-missing')"><div class="act-placeholder-inner"><span>+</span></div></div><div class="activity-info"><span class="act-badge finals-badge">Finals</span><h4>Activity 3</h4></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&#x2715;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <section id="featured" class="section advertisement">
+        <div class="container">
+            <h2 class="section-title">Featured</h2>
+            <div class="ad-container">
+                <div class="ad-card">
+                    <div class="ad-badge">Portfolio</div>
+                    <h3>Check Out My Projects</h3>
+                    <p>Explore my latest web development projects and creative works. Each project showcases different skills and technologies.</p>
+                    <a href="https://github.com/kclamano" target="_blank" class="btn-primary">View on GitHub</a>
+                </div>
+                <div class="ad-card">
+                    <div class="ad-badge">Contact</div>
+                    <h3>Let's Collaborate</h3>
+                    <p>I provide custom web development solutions tailored to your needs. Let's build something great together!</p>
+                    <a href="mailto:klamano23@gmail.com" class="btn-primary">Get in Touch</a>
+                </div>
+                <div class="ad-card">
+                    <div class="ad-badge">Activities</div>
+                    <h3>My Course Journey</h3>
+                    <p>From Prelims to Finals — 33 activities that document my growth and learning throughout the semester.</p>
+                    <a href="#activities" class="btn-primary">View Activities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-name">K.C. Lamano</p>
+            <p class="footer-sub">Student · Web Developer · Aspiring Software Engineer</p>
+            <div class="footer-socials">
+                <a href="mailto:klamano23@gmail.com" class="footer-icon" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kim-celine-lamano-35b906390/" target="_blank" class="footer-icon" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/kclamano" target="_blank" class="footer-icon" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="tel:+639771743302" class="footer-icon" title="Phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </a>
+            </div>
+            <p class="footer-copy">© 2024 K.C. Lamano. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Slideshow Lightbox -->
+    <div class="slideshow-lightbox" id="slideshow-lightbox">
+        <button class="lightbox-close" id="slideshow-close">&#x2715;</button>
+        <button class="slide-arrow slide-prev" id="slide-prev">&#8249;</button>
+        <div class="slideshow-content">
+            <img src="" alt="" id="slideshow-img">
+            <div class="slide-counter" id="slide-counter">1 / 5</div>
+        </div>
+        <button class="slide-arrow slide-next" id="slide-next">&#8250;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
