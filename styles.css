@@ -105,7 +105,7 @@ body {
     color: var(--primary-color);
 }
 
-/* ===== HRO SECTION ===== */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -200,7 +200,7 @@ body {
     font-size: 2rem;
 }
 
-/* ===== SECTIONS ===== */
+
 .section {
     padding: 80px 20px;
 }
@@ -229,7 +229,7 @@ body {
     left: 20%;
 }
 
-/* ===== AUTOBIOGRAPHY / TIMELINE ===== */
+
 .timeline {
     position: relative;
     max-width: 800px;
@@ -302,7 +302,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* ===== PERSONAL INFO GRID ===== */
+
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -348,7 +348,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* ===== ALL ABOUT SECTION ===== */
+
 .subsection {
     margin-bottom: 4rem;
 }
@@ -445,7 +445,7 @@ body {
     }
 }
 
-/* Hobbies */
+
 .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -487,7 +487,7 @@ body {
     color: var(--text-light);
 }
 
-/* Goals */
+
 .goals-container {
     max-width: 900px;
     margin: 0 auto;
@@ -527,7 +527,7 @@ body {
     color: var(--text-light);
 }
 
-/* ===== ADVERTISEMENT SECTION ===== */
+
 .advertisement {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
     color: var(--white);
@@ -610,7 +610,7 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* ===== GALLERY SECTION ===== */
+
 .gallery-section {
     background: var(--light-bg);
 }
@@ -687,7 +687,7 @@ body {
     transform: scale(1.06);
 }
 
-/* Placeholder cards */
+
 .gallery-placeholder {
     width: 100%;
     height: 100%;
@@ -717,7 +717,7 @@ body {
 .gallery-placeholder.school2  { background: linear-gradient(135deg, #43e97b, #38f9d7); }
 .gallery-placeholder.projects2{ background: linear-gradient(135deg, #fa709a, #fee140); }
 
-/* Overlay */
+
 .gallery-overlay {
     position: absolute;
     inset: 0;
@@ -777,14 +777,14 @@ body {
     transform: scale(1.15);
 }
 
-/* Hidden state for filters */
+
 .gallery-item.hidden {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.92);
 }
 
-/* Upload hint */
+
 .gallery-upload-hint {
     text-align: center;
     color: var(--text-light);
@@ -797,7 +797,7 @@ body {
     margin: 0 auto;
 }
 
-/* Lightbox */
+
 .lightbox {
     position: fixed;
     inset: 0;
@@ -858,7 +858,7 @@ body {
     }
 }
 
-/* Slideshow badge on card */
+
 .slideshow-badge {
     position: absolute;
     top: 0.6rem;
@@ -873,7 +873,7 @@ body {
     pointer-events: none;
 }
 
-/* Slideshow lightbox */
+
 .slideshow-lightbox {
     position: fixed;
     inset: 0;
@@ -937,7 +937,7 @@ body {
     transform: scale(1.1);
 }
 
-/* ===== ACTIVITIES SECTION ===== */
+
 .activities-section {
     background: var(--white);
 }
@@ -950,7 +950,7 @@ body {
     margin-bottom: 2.5rem;
 }
 
-/* Term group block */
+
 .term-group {
     margin-bottom: 4rem;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -960,7 +960,7 @@ body {
     display: none;
 }
 
-/* Term header row */
+
 .term-header {
     display: flex;
     align-items: center;
@@ -983,7 +983,7 @@ body {
     font-weight: 500;
 }
 
-/* Term & activity badges */
+
 .term-badge,
 .act-badge {
     display: inline-block;
@@ -1002,7 +1002,7 @@ body {
 .prefinal-badge { background: linear-gradient(135deg, #4facfe, #00f2fe); color: #0f172a; }
 .finals-badge   { background: linear-gradient(135deg, #43e97b, #38f9d7); color: #0f172a; }
 
-/* Activities grid */
+
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1014,7 +1014,7 @@ body {
     max-width: 660px;
 }
 
-/* Activity card */
+
 .activity-card {
     border-radius: 14px;
     overflow: hidden;
@@ -1029,7 +1029,7 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* Image wrapper — handles both real images and placeholders */
+
 .activity-img-wrap {
     position: relative;
     aspect-ratio: 4/3;
@@ -1049,7 +1049,7 @@ body {
     transform: scale(1.06);
 }
 
-/* Placeholder shown when image is missing */
+
 .act-placeholder-inner {
     display: none;
     flex-direction: column;
@@ -1071,7 +1071,7 @@ body {
     font-size: 2rem;
 }
 
-/* When onerror fires, hide the broken img and show placeholder */
+
 .activity-img-wrap.img-missing img {
     display: none;
 }
@@ -1080,7 +1080,7 @@ body {
     display: flex;
 }
 
-/* Info strip below image */
+
 .activity-info {
     padding: 0.65rem 0.85rem;
     display: flex;
@@ -1097,7 +1097,7 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Activity filter buttons reuse .filter-btn but scoped to act-filter-btn */
+
 .act-filter-btn {
     padding: 0.5rem 1.5rem;
     border: 2px solid var(--primary-color);
@@ -1144,7 +1144,7 @@ body {
     }
 }
 
-/* ===== SMOOTH SECTION TRANSITIONS ===== */
+
 .autobiography   { background: linear-gradient(180deg, #f8fafc 0%, #f0f4ff 100%); }
 .personal-info   { background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%); }
 .all-about       { background: linear-gradient(180deg, #ffffff 0%, #fdf4ff 100%); }
@@ -1341,7 +1341,7 @@ body {
         padding: 50px 15px;
     }
 }
-/* ===== SKILL BAR CSS ANIMATION OVERRIDE ===== */
+
 .skill-progress {
     animation: none !important;
     transition: none !important;

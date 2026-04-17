@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ===== NAV LINKS =====
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -14,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== NAVBAR SCROLL =====
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function() {
         navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // ===== ACTIVE NAV ON SCROLL =====
     const sections = document.querySelectorAll('.section, .hero');
     window.addEventListener('scroll', function() {
         let current = '';
@@ -33,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== TYPEWRITER =====
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
         const spanEl = heroTitle.querySelector('.highlight');
@@ -53,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         typeWriter();
     }
 
-    // ===== SCROLL TOP BUTTON =====
     const scrollTopBtn = document.createElement('button');
     scrollTopBtn.innerHTML = '↑';
     scrollTopBtn.className = 'scroll-top-btn';
@@ -77,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollTopBtn.addEventListener('mouseenter', function() { this.style.transform = 'scale(1.1)'; });
     scrollTopBtn.addEventListener('mouseleave', function() { this.style.transform = 'scale(1)'; });
 
-    // ===== HERO PARALLAX =====
     window.addEventListener('scroll', function() {
         const scrolled = window.scrollY;
         const heroContent = document.querySelector('.hero-content');
@@ -87,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ===== REVEAL ANIMATIONS =====
     const revealElements = document.querySelectorAll('.info-card, .hobby-card, .goal-item, .timeline-item');
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -104,11 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
         revealObserver.observe(element);
     });
 
-    // ===== GALLERY FILTER =====
     const filterBtns = document.querySelectorAll('.filter-btn');
     const galleryItems = document.querySelectorAll('.gallery-item');
 
-    // Make all gallery items visible immediately
     galleryItems.forEach(item => {
         item.style.opacity = '1';
         item.style.transform = 'none';
@@ -131,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== GALLERY LIGHTBOX =====
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
 
@@ -155,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     }
 
-    // ===== ACTIVITIES FILTER =====
     const actFilterBtns = document.querySelectorAll('.act-filter-btn');
     const termGroups = document.querySelectorAll('.term-group');
 
@@ -174,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== SLIDESHOW LIGHTBOX =====
     const slideshowLightbox = document.getElementById('slideshow-lightbox');
     const slideshowImg = document.getElementById('slideshow-img');
     const slideCounter = document.getElementById('slide-counter');
@@ -213,10 +201,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('slideshow-close').addEventListener('click', closeSlideshow);
     slideshowLightbox.addEventListener('click', (e) => { if (e.target === slideshowLightbox) closeSlideshow(); });
 
-    // ===== ACTIVITY CARDS =====
     const activityCards = document.querySelectorAll('.activity-card');
 
-    // Make all activity cards visible immediately
     activityCards.forEach(card => {
         card.style.opacity = '1';
         card.style.transform = 'none';
@@ -247,7 +233,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== KEYBOARD SHORTCUTS =====
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') { closeLightbox(); closeSlideshow(); }
         if (slideshowLightbox.classList.contains('active')) {
